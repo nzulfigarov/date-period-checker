@@ -1,0 +1,22 @@
+version: '3.8'
+
+
+services:
+
+
+### PHP-FPM ##############################################
+    php-fpm:
+      container_name: test-php-fpm
+      build:
+        context: ./docker/php-fpm
+        args:
+          - PUID=${PUID}
+          - PGID=${PGID}
+          - http_proxy
+          - https_proxy
+          - no_proxy
+      volumes:
+        - ./:/var/www
+      ports:
+        - "9000:9000"
+        - "8000:8000"

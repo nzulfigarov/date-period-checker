@@ -1,0 +1,17 @@
+{
+    "name": "nzulfigarov/check-date-periods",
+    "description": "Checks dates",
+    "type": "library",
+    "require": {
+        "nesbot/carbon": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nzulfigarov\\CheckDatePeriods\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "symfony/var-dumper": "^6.4"
+    }
+}
