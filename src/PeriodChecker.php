@@ -38,7 +38,7 @@ class PeriodChecker
         //today is the check day
         $todayIsTheCheckDay = false;
 
-        echo sprintf("Checking date: %s. \n\rReference: %s ", $now->format('d.m.y'), implode(',', $this->dates));
+        echo sprintf("Checking date: %s. \n\rReference: %s \n\r", $now->format('d.m.y'), implode(',', $this->dates));
 
         foreach ($reference as $stringDate => $date) {
             if (!$date instanceof Carbon) {
